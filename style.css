@@ -1,0 +1,602 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    /* 1 rem = 20px */
+    font-size: 125%;
+    
+}
+
+body{
+    background-color: #4A4A4A;
+}
+
+p{
+    font-family: 'Catamaran', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Pacifico', cursive;
+}
+
+.wrapper{
+  max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Hovers */
+.navigation li a{
+  padding:5px 5px 5px 5px;
+}
+.navigation li a:hover,
+.navigation li a:focus{
+    border: 3px solid #F2A11C;
+    background-color: #4A4A4A;
+  
+}
+
+.social li a{
+  padding:5px 5px 5px 5px;
+}
+
+.social li a:hover,
+.social li a:focus{
+    border: 3px solid #F2A11C;
+    background-color: #4A4A4A;
+
+  
+}
+
+.about .btn{
+  padding:5px 5px 5px 5px;
+}
+
+.about .btn:hover,
+.about .btn:focus{
+    border: 3px solid #F2A11C;
+
+}
+
+.mission .btn{
+  padding:5px 5px 5px 5px;
+}
+
+.mission .btn:hover,
+.mission .btn:focus{
+    border: 3px solid #F2A11C;
+
+}
+
+.mission .btn{
+  padding:5px 5px 5px 5px;
+}
+
+.meet .btn:hover,
+.meet .btn:focus{
+    border: 3px solid #F2A11C;
+
+}
+
+.footer li a{
+  padding:5px 5px 5px 5px;
+}
+
+.footer li a:hover,
+.footer li a:focus{
+    
+    border: 3px solid #F2A11C;
+    background-color: #4A4A4A;
+}
+
+
+.customSearch .customSearchBotton{
+  padding:5px 5px 5px 5px;
+}
+
+.customSearch .customSearchBotton:hover,
+.customSearch .customSearchBotton:focus{
+    border: 3px solid #F2A11C;
+    background-color: #4A4A4A;
+    color: #F2A11C;
+    
+}
+
+/* Navbar */
+
+
+.navigation nav{
+    position: absolute;
+    background: transparent;
+    height: 80px;
+    width: 100%;
+  }
+  
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  .navigation nav ul{
+  text-align: center;
+   
+  }
+  .navigation nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  .navigation nav ul li a{
+    color: white;
+    font-size: 19px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+          
+/* top image */
+.headerImage{
+    width: 100%;
+    height: 100vh;
+}
+.headerImage img{
+    height: 100%;
+    width: 100%;
+}
+.headerImage h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  font-size: 55px;
+  color: #F2A11C;
+  font-family: 'Pacifico', cursive;
+}
+.social{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+.social ul{
+  list-style-type: none;
+}
+.social ul li{
+  margin-top: 5px;
+}
+.social ul li a{
+  font-size: 18px;
+  color: #F2A11C;
+}
+
+/* About section */
+.aboutSection .about{
+padding: 85px;
+}
+.aboutSection .about h1{
+    font-size: 32px;
+    font-family: 'Pacifico', cursive;
+}
+.aboutSection .about p{
+    font-size: 20px;
+}
+.aboutSection .about button{
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 7px 10px;
+    font-size: 18px;
+    color: #F2A11C;
+    background-color: #1F2022;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    line-height: 29px;
+}
+.aboutSection .aboutimg{
+    width: 100%;
+    height: 400px;
+}
+.aboutSection .aboutimg img{
+    width: 100%;
+    height: 422px;
+}
+
+/* Mission section */
+.missionSection .mission{
+    padding: 85px;
+    }
+    .missionSection .mission h1{
+        font-size: 32px;
+        font-family: 'Pacifico', cursive;
+    }
+    .missionSection .about p{
+        font-size: 20px;
+    }
+    .missionSection .mission button{
+        margin-top: 15px;
+        cursor: pointer;
+        padding: 7px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #F2A11C;
+        background-color: #1F2022;
+        border: none;
+        text-transform: uppercase;
+        font-family: 'Catamaran', sans-serif;
+        line-height: 29px;
+    }
+    .missionSection .missionimg{
+        width: 100%;
+        height: 400px;
+    }
+    .missionSection .missionimg img{
+        width: 100%;
+        height: 422px;
+    }
+
+
+/* Meet section */
+.meetSection{
+padding: 60px 130px;
+background-color: #f4f4f4;
+}
+.meetSection .flexContainer .flexItem{
+  flex: auto;
+}
+.meetSection .meet{
+    padding: 15px 30px; 
+    }
+    .meetSection .meet h1{
+        font-size: 32px;
+        font-family: 'Pacifico', cursive;
+    }
+    .meetSection .meet p{
+        font-size: 20px;
+    }
+    .meetSection .meet button{
+        margin-top: 15px;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #F2A11C;
+        background-color: #1F2022;
+        border: none;
+        font-family: 'Catamaran', sans-serif;
+    }
+    .meetSection .meetimg{
+        width: 100%;
+    }
+    .meetSection .meetimg img{
+        width: 250px;
+        height: 300px;
+        padding-top: 35px;
+    }
+
+
+.adsimg{
+  background-image: url("https://psd.hackeryou.com/assignment1-assets/bikerland/image-5.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 100px 120px;
+}
+.adsimg .flexContainer .flexItem{
+  text-align: center;
+  flex: auto;
+  margin: 0 auto;
+}
+.adsimg .products i{
+  margin-top: 15px;
+  font-size: 50px;
+  color: #ffffff;
+}
+.adsimg .products p{
+margin-top: 20px;
+  font-size: 20px;
+  color: #F2A11C;
+}
+
+/* gramSection */
+.gramSection{
+    padding: 20px 100px;
+}
+.gramHeading h1{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 25px;
+}
+.gramSection .flexItem{
+  padding: 10px;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+  }
+.flexItem {
+    flex: 30%;
+}
+
+.gramImage img{
+    width: 100%;
+    height: 300px;
+}
+/* Footer section start */
+.footerSection{
+  background-color: #222;
+  padding: 50px 80px;
+}
+.footer nav{
+  position: relative;
+}
+.footer nav ul{
+text-align: center;
+}
+.footer nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.footer nav ul li a{
+  color: #fff;
+  font-size: 19px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.footerSection .contact h1{
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+  color: #F2A11C;
+}
+.footerSection .contact p{
+  font-size: 16px;
+  color: #fff;
+}
+.footerSection .contactInput h1{ 
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+  color: #F2A11C;
+}
+.footerSection .contactInput p{ 
+  font-size: 16px;
+  color: #fff;
+}
+.customSearch {
+  position: relative;
+  margin-top: 20px;
+  width: 70%;
+}
+.customSearchInput {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 100px 10px 20px; 
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+.customSearchBotton {
+  position: absolute;
+  right: 0px; 
+  top: 0px;
+  bottom: 0px;
+  border: 0;
+  background: #F2A11C;
+  color: #1F2022;
+  font-weight: 600;
+  letter-spacing: 1px;
+  outline: none;
+  margin: 0;
+  padding: 5px 20px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+.copyright{
+  background-color: #000;
+  padding: 4px 0px;
+}
+.copyright p{
+  text-align: center;
+  color: #4A4A4A;
+  font-size: 18px;
+}
+
+
+/* Responsive */
+.mobileImg{
+  display: none;
+}
+
+
+@media (max-width: 870px) {
+
+     .checkbtn{
+      display: block;
+    }
+    .navigation nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #222;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 9999;
+    }
+    .navigation nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .navigation nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  
+  label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    .navigation nav ul li a{
+      font-size: 16px;
+    }
+  .mobileImg{
+    display: block;
+    
+  }
+  .pcImage{
+    width: 100%;
+    display: none;
+  }
+    .flexContainer {
+      flex-direction: column;
+    }
+    .flexItem {
+        flex: 50%;
+      }
+      .social{
+        display: none;
+      }
+      /* about */
+      .aboutSection .about{
+        padding: 45px;
+        text-align: center;
+      }
+      .aboutSection .flexContainer {
+        flex-direction: column-reverse;
+      }
+      /* mission */
+      .missionSection .mission {
+        padding: 45px;
+        text-align: center;
+      }
+      
+      /* meet */
+      .meetSection {
+        padding: 45px 20px;
+        background-color: #f4f4f4;
+      }
+      .meetSection .meetimg img{
+        width: 100%;
+        height: auto;
+      }
+      .meetSection .meet {
+        padding: 15px 30px;
+        text-align: center;
+      }
+      /* gram  */
+      .gramSection {
+        padding: 20px 18px;
+      }
+      .gramSection .flexContainer{
+        flex-direction: row;
+      }
+      .mobileimg{
+        display: none;
+      }
+      /* footer */
+      .footerSection {
+        background-color: #222;
+        padding: 50px 20px;
+      }
+      .footerSection .contact{
+        text-align: center;
+      }
+      .footerSection .contactInput{
+        text-align: center;
+      }
+      .customSearch {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+      }
+      .customSearchBotton {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        border: 0;
+        background: #F2A11C;
+        color: #1F2022;
+        font-weight: 600;
+        letter-spacing: 1px;
+        outline: none;
+        margin: 15px 0px;
+        padding: 15px 20px;
+        z-index: 2;
+        text-transform: uppercase;
+        width: 100%;
+      }
+  }
+
+  @media (max-width: 600px){
+
+   .flexItem .aboutimg img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .flexItem .missionimg img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .aboutSection .aboutimg{
+    width: 100%;
+    height: 200px;
+  }
+  .missionSection .missionimg{
+    width: 100%;
+    height: 200px;
+  }
+  .gramImage img{
+    
+    height: 150px;
+  }
+
+  .customSearchInput{
+    text-align: center;
+  }
+
+
+}
